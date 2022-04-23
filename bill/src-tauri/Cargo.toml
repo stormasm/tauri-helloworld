@@ -15,13 +15,13 @@ members = [
 ]
 
 [build-dependencies]
-tauri-build = { version = "1.0.0-rc.5" }
+tauri-build = { version = "1.0.0-rc.5", features = [] }
 
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
 #tauri = { version = "1.0.0-rc.5", features = [ "api-all" ] }
-tauri = { path="./crates/tauri", features = [ "api-all" ]  }
+tauri = { path="./crates/tauri", features = ["api-all"] }
 
 [features]
 # by default Tauri runs in production mode
